@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Top Songs</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var global_json_data;
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=toto&api_key=36bd5dad9f52be6a14c9545c4541fda1&format=json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var topSongs = request.response;
+      showSongs(topSongs);
+    }
+
+    function showSongs(jsonObj) {
+      var songs = jsonObj.toptracks.track;
+      for(var i = 0; i < songs.length; i++) {
+        console.log(songs[i]);
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+       
+        myH2.textContent = songs[i].name;
+        myPara1.textContent = 'Listeners: ' + songs[i].listeners;
+        myPara2.textContent = 'Play Count: ' + songs[i].playcount;
+   
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        section.appendChild(myArticle);
+      }
+    }
+    </script>
+  </body>
+</html>
