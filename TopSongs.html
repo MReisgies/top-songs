@@ -55,19 +55,19 @@
 
       for (var i = 0; i < songs.length; i++) {
         console.log(songs[i]);
-        var myArticle = document.createElement('article');
+        var mySong = document.createElement('song');
         var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
+        var myListeners = document.createElement('p');
+        var myPlays = document.createElement('p');
 
         myH2.textContent = songs[i].name;
-        myPara1.textContent = 'Listeners: ' + songs[i].listeners;
-        myPara2.textContent = 'Play Count: ' + songs[i].playcount;
+        myListeners.textContent = 'Listeners: ' + songs[i].listeners;
+        myPlays.textContent = 'Play Count: ' + songs[i].playcount;
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        section.appendChild(myArticle);
+        mySong.appendChild(myH2);
+        mySong.appendChild(myListeners);
+        mySong.appendChild(myPlays);
+        section.appendChild(mySong);
       }
     }
 
