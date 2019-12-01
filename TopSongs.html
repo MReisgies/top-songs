@@ -5,21 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top Songs</title>
-
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="header">
+        <h1>Top Song Search</h1>
+      </div>
+      <div class="header">
+          <p>Simple search for the top songs of artists.</p>
+          <p>Based on lastFM API</p>
+      </div>
+      <div class="header">
+              <img src="/assets/lastfm_logo.png" alt="lastFM logo">
+          </header>
+      </div>
 
-  <header>
-
-  </header>
 
   <div>
     <form class="searchForm">
-      <input type="search" placeholder="Artist" class="searchForm-input">
-      <button type="submit">Start Search</button>
+      <input type="search" placeholder="Search for an artist" class="searchForm-input">
+      <button type="submit" class="icon searchIcon">
+          <img src="/assets/note.svg" alt="Music note">
+        </button>
+
     </form>
   </div>
 
@@ -59,14 +68,18 @@
         var myH2 = document.createElement('h2');
         var myListeners = document.createElement('p');
         var myPlays = document.createElement('p');
+        var myURL = document.createElement('p');
 
         myH2.textContent = songs[i].name;
         myListeners.textContent = 'Listeners: ' + songs[i].listeners;
         myPlays.textContent = 'Play Count: ' + songs[i].playcount;
+        myURL.textContent = 'lastFM: ' + songs[i].url; 
+        
 
         mySong.appendChild(myH2);
         mySong.appendChild(myListeners);
         mySong.appendChild(myPlays);
+        mySong.appendChild(myURL);
         section.appendChild(mySong);
       }
     }
@@ -77,6 +90,8 @@
       artist = input.trim();
       getSongs()
     }
+
+    
 
     const form = document.querySelector('.searchForm');
     form.addEventListener('submit', handleSubmit);

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+
+<p id= id1>BItte klicken dass JSON kommt...</p>
+<p id = daten> JSON anzeigen</p>
+
+
+
+
+<script>
+var id1 = document.getElementById("id1");
+var daten = document.getElementById("daten");
+var json;
+id1.addEventListener("click", function(evt){
+    fetch('https://api.github.com/users/pfisterer/repos')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      json = JSON.stringify(myJson)
+        console.log(json);
+      daten.innerHTML =json;
+    });
+
+})
+</script>
+
+
+</body>
+</html>
