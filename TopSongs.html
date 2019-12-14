@@ -17,12 +17,12 @@
           <p>Based on lastFM API</p>
       </div>
       <div class="header">
+<!-- Für Bilddateien wird der der Unterordner "assets" angelegt -->
               <img src="/assets/lastfm_logo.png" alt="lastFM logo">
           </header>
       </div>
-
-
   <div>
+    <!-- Hier wir die Suchmaske eingesetzt -->
     <form class="searchForm">
       <input type="search" placeholder="Search for an artist" class="searchForm-input">
       <button type="submit" class="icon searchIcon">
@@ -31,9 +31,8 @@
 
     </form>
   </div>
-
+<!-- Diese Klasse in nötig, damit die Suchresultate angezeigt werden -->
   <section class="searchResults">
-
   </section>
 
   <script>
@@ -90,8 +89,6 @@
       artist = input.trim();
       getSongs()
     }
-
-    
 
     const form = document.querySelector('.searchForm');
     form.addEventListener('submit', handleSubmit);
