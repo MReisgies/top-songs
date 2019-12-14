@@ -1,14 +1,14 @@
 # lastFM
 
 I created this project to learn how to do simple AJAX API requests.
-The target of my app is to search for information about artists via the last.fm API.
+The target of my web app is to search for information about artists via the last.fm API.
 
 
-## Wiki part based on tutorial by Ayooluwa Isaiah:
+## Project Documentation with MkDocs
 
-https://freshman.tech/wikipedia-javascript/
+I will use this repository for a little project web - hybrid app project.
+The full documentation is hosted with GithubPages in a static MkDocs website: https://mreisgies.github.io/lastFM/
 
+MkDocs is a static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a YAML configuration file. 
+More information: https://www.mkdocs.org/
 
-
-music icon#
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
