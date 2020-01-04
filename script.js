@@ -25,22 +25,26 @@ function showSongs(jsonObj) {
 
   for (var i = 0; i < songs.length; i++) {
     console.log(songs[i]);
-    var mySong = document.createElement('song');
+    var mySong = document.createElement('div');
+    var mySongLink = document.createElement('a');
     var myH2 = document.createElement('h2');
     var myListeners = document.createElement('p');
     var myPlays = document.createElement('p');
     var myURL = document.createElement('p');
 
+    mySong.classList.add('song');
     myH2.textContent = songs[i].name;
+    mySongLink.href = songs[i].url;
     myListeners.textContent = 'Listeners: ' + songs[i].listeners;
     myPlays.textContent = 'Play Count: ' + songs[i].playcount;
     myURL.textContent = 'lastFM: ' + songs[i].url; 
     
 
-    mySong.appendChild(myH2);
-    mySong.appendChild(myListeners);
-    mySong.appendChild(myPlays);
-    mySong.appendChild(myURL);
+    mySongLink.appendChild(myH2);
+    mySongLink.appendChild(myListeners);
+    mySongLink.appendChild(myPlays);
+    mySongLink.appendChild(myURL);
+    mySong.appendChild(mySongLink);
     section.appendChild(mySong);
   }
 }

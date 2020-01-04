@@ -10,8 +10,9 @@ ls*, *::before, *::after {
 }
 
 body {
-  background-color: rgb(119, 116, 116);
+  background-color: rgb(77, 74, 74);
   font-family:'Roboto', sans-serif;
+  color: white;
 }
 
 .header {
@@ -25,8 +26,8 @@ body {
 .searchForm {
   margin-left: 30px;
   display: flex;
-  background-color: #585858;
-  border: 1px solid #242424;
+  background-color grey;
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -51,7 +52,7 @@ body {
 }
 
 .icon:hover {
-  background-color: #1f1f1f;
+  background-color: red;
 }
 
 .icon img {
@@ -61,9 +62,21 @@ body {
 
 .searchResults {
   padding: 20px 0 50px;
-  margin-left: 140px;
+  margin-left: 50px;
   width: 550px;
   text-align: left;
-  animation: show 0.5s forwards ease-in-out;
 }
+.song {
+  border: 1px solid rgb(204, 204, 204)
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 5px 15px;
+  background-color: grey;
+}
+
+.searchResults a{
+  color: white;
+  text-decoration: none;
+}
+
 
