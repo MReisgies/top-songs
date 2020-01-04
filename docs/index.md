@@ -60,7 +60,7 @@ Meine App beschränkt sich auf die Darstellung dieser Informationen.
 Die App soll über die Eingabe eines Interpreten eine Übersicht der Musiktitel geordnet nach der Beliebtheit der Titel.
 Die Beliebtheit soll sich auf die Anzahl der Hörer auf Last.fm beziehen. 
 	
-    ![Screenshot](img/topsongs_1.png)
+![Screenshot](img/topsongs_1.png)
 
 ### Brauche ich ein Backend?
 
