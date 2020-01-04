@@ -19,7 +19,7 @@ Ziel: Eine schlichte Web Single Page Application aufbauen, die die LastFM API an
 ### Dokumentation
 Aus Interesse an verschiedenen Dokumentationsmöglichkeiten, werde ich den wesentlichen Teil der Dokumentation in einer statischen MkDocs Website veröffentlichen.
 
-### Teil 1: SPA mit API-Call
+## Teil 1: SPA mit API-Call
 
 LAST.fm Musikdatenbank API:
 · API ist frei verfügbar
@@ -29,7 +29,7 @@ LAST.fm Musikdatenbank API:
 · Es sollen die bekanntesten Titel eines Musik Interpreten aufgelistet werden
 Coding mit HTML und Javascript sowie grundlegende Gestaltung mit CSS
 
-## Etwas genauer
+### Etwas genauer
 
 Last.fm ist ein Musikportal, das Metadaten zu Künstlern und deren Musik archiviert und über Streaming bereitstellt. 
 Last.fm verbindet sich den gängigen Musikstreaming Plattformen wie iMusic und Spotify, auf diese Art und Weise ist es nicht zwingend nötig, die Musik über den last.fm eigenen Player zu hören.
@@ -50,7 +50,26 @@ Jedoch ist die Darstellung der Ergebnisse immer eine Mischung von Interpreten. D
 
 ![Screenshot](img/lastfm_u2.png)
 
-### Teil 2: React Native Umsetzung
+Mit meiner Anwendung, möchte ich die Datenbank von Last.fm durchsuchen und Suchergebnisse für meine Ansprüche übersichtlich darstellen.
+Relevante Informationen, die ich über die last.fm API beziehen möchte:
+	- Track Titel
+	- Anzahl der Hörer auf last.fm
+	- Wie oft das Lied gespielt wurde über last.fm oder verknüpfte Anwendungen ("play count")
+
+Meine App beschränkt sich auf die Darstellung dieser Informationen. 
+Die App soll über die Eingabe eines Interpreten eine Übersicht der Musiktitel geordnet nach der Beliebtheit der Titel.
+Die Beliebtheit soll sich auf die Anzahl der Hörer auf Last.fm beziehen. 
+	
+    ![Screenshot](img/topsongs_1.png)
+
+### Brauche ich ein Backend?
+
+Ich bin zum Entschluss gekommen, den ersten Teil 1 meines Projekts ohne ein Backend umzusetzen,
+da ich bisher nicht das Ziel verfolge lokal Daten zu speichern und dem Nutzer der Website verfügbar zu machen.
+Ich werde auf das Thema Backend im zweiten Teil zurückkommen.
+
+
+## Teil 2: React Native Umsetzung
 
 Ziel: SPA aus Teil 2 auf React Native umgestalten
  
