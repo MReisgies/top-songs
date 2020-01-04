@@ -5,9 +5,10 @@ let artist = null;
 
 function getSongs() {
   console.log(artist)
+  const api_key = '36bd5dad9f52be6a14c9545c4541fda1';
   var request = new XMLHttpRequest();
   request.open('GET',
-    `http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${artist}&api_key=36bd5dad9f52be6a14c9545c4541fda1&format=json`
+    `http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${artist}&api_key=${api_key}&format=json`
   );
   request.responseType = 'json';
   request.send();
