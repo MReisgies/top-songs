@@ -31,7 +31,6 @@ function showSongs(jsonObj) {
     var myH2 = document.createElement('h2');
     var myListeners = document.createElement('p');
     var myPlays = document.createElement('p');
-    var myURL = document.createElement('p');
 
     mySong.classList.add('song');
     myH2.textContent = songs[i].name;
