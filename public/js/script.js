@@ -38,13 +38,12 @@ function showSongs(jsonObj) {
     mySongLink.href = songs[i].url;
     myListeners.textContent = 'Listeners: ' + songs[i].listeners;
     myPlays.textContent = 'Play Count: ' + songs[i].playcount;
-    myURL.textContent = 'lastFM: ' + songs[i].url; 
+
     
 
     mySongLink.appendChild(myH2);
     mySongLink.appendChild(myListeners);
     mySongLink.appendChild(myPlays);
-    mySongLink.appendChild(myURL);
     mySong.appendChild(mySongLink);
     section.appendChild(mySong);
   }
