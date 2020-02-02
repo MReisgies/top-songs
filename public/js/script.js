@@ -38,8 +38,7 @@ function showSongs(jsonObj) {
     myListeners.textContent = 'Listeners: ' + songs[i].listeners;
     myPlays.textContent = 'Play Count: ' + songs[i].playcount;
 
-    
-
+/* through mySongLink all Child Elements get linked to the song website on last.fm */
     mySongLink.appendChild(myH2);
     mySongLink.appendChild(myListeners);
     mySongLink.appendChild(myPlays);

@@ -58,10 +58,10 @@ body {
 
 .searchResults {
   color: white;
-  padding: 20px;
   width: flex;
   text-align: left;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .song {
