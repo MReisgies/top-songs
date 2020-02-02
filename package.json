@@ -1,0 +1,27 @@
+{
+  "name": "LastFM_web",
+  "version": "1.0.0",
+  "description": "I created this project to learn how to do simple AJAX API requests.\r The target of my web app is to search for information about artists via the last.fm API.",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MReisgies/lastFM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MReisgies/lastFM/issues"
+  },
+  "homepage": "https://github.com/MReisgies/lastFM#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
