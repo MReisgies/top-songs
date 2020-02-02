@@ -6,35 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top Songs</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Github Button laden von https://buttons.github.io/ -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <h1>Top Song Search</h1>
-      </div>
-      <div class="header">
-          <p>Simple search for the top songs of artists.</p>
-          <p>Based on lastFM API</p>
-      </div>
-      <div class="header">
-<!-- Für Bilddateien wird der der Unterordner "assets" angelegt -->
-              <img src="/assets/lastfm_logo.png" alt="lastFM logo"></header>
-      </div>
-  <div>
-    <!-- Hier wir die Suchmaske eingesetzt -->
-    <form class="searchForm">
-      <input type="search" placeholder="Search for an artist" class="searchForm-input">
-      <button type="submit" class="icon searchIcon">
-          <img src="/assets/note.svg" alt="Music note">
-        </button>
-
+        <h1>Top Songs</h1>
+    </div>
+    <div class="header">
+        <p>Simple search for the top songs of artists wihtin the Last.fm online music database.</p> 
+          <p>Powered by <a href="https://www.last.fm/api/"style="color:red">Last.fm API</a></p>
+          <!-- Github Repo Button -->
+          <a class="github-button" href="https://github.com/mreisgies/lastFM/fork" 
+          data-color-scheme="no-preference: dark; light: light; dark: dark;" 
+          data-size="large" data-show-count="true" 
+          aria-label="Fork mreisgies/lastFM on GitHub">Fork</a>
+    </div>
+    <div>
+      <!-- Hier wir die Suchmaske eingesetzt -->
+        <form class="searchForm">
+          <input type="search" placeholder="Search for an artist" class="searchForm-input">
+          <button type="submit" class="icon searchIcon">
+              <img src="/assets/note.svg" alt="Music note">
+            </button>
     </form>
-  </div>
-<!-- Diese Klasse in nötig, damit die Suchresultate angezeigt werden -->
+    </div>
+  <!-- Diese Klasse in nötig, damit die Suchresultate angezeigt werden -->
   <section class="searchResults">
   </section>
 <!-- Hier wird auf JavaScript verwiesen -->
 <script src="script.js"></script>
+
 </body>
 
 </html>
