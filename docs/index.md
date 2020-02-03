@@ -62,31 +62,38 @@ Die Beliebtheit soll sich auf die Anzahl der Hörer auf Last.fm beziehen.
 	
 ![Screenshot](img/topsongs_1.png)
 
-### Brauche ich ein Backend?
+### Deployment auf Heroku
 
-Ich bin zum Entschluss gekommen, den ersten Teil 1 meines Projekts ohne ein Backend umzusetzen,
-da ich bisher nicht das Ziel verfolge lokal Daten zu speichern und dem Nutzer der Website verfügbar zu machen.
-Ich werde auf das Thema Backend im zweiten Teil zurückkommen.
+Ich bin zum Entschluss gekommen, den ersten Teil 1 meines Projekts auf Heroku zu deployen.
+
+https://topsongs-lastfm.herokuapp.com/
 
 
 ## Teil 2: React Native Umsetzung
 
 Ziel: SPA aus Teil 2 auf React Native umgestalten
  
-Funktionsumfang:
-· lastFM API Call wie in der SPA
-· App Menu mit react navigation aufbauen
-· Login über Social Media: Suchanfragen im eigenen Profil abspeichern
-· Suchanfragen in Datenbank speichern mit Google Firestore 
-· Navigationsstruktur:
-        § lastFM search:
-            · API Call 1: Top Songs
-            · API Call 2: Albums
-            · API Call 3: Artist Metadata
-        § Login
-About (Impressum mit Link zur MkDocs Dokumentation)
+-	Nutzung der Last.fm API
+-	Charts verschiedener Länder sollen aktuell abgefragt und dargestellt werden
+-	React Native Framework kennen lernen
+-	Geplante Komponenten:
+-   React Navigation – um eine Navigation in der App zu realisieren
+-   Expo 
+        - Schnelles ausprobieren der App während des Entwicklungsprozesses
+        - Möglichkeit zur Entwicklung mit expo.snack
 
 
+##	Entwurf
+Eine SPA besteht aus einem einzigen Hyper Text Markup Language (HTML) -Dokument, das Benutzerinhalte dynamisch nachladen kann. Die Idee hinter der SPA ist es, die Rechenleistung der immer stärkeren Anwendergeräte, so weit wie möglich auszunutzen. Klassische Webanwendungen bestehen meist aus mehreren untereinander verlinkten HTML-Dokumenten. Wird eine neue, möglicherweise über einen Link verknüpfte, Website aufgerufen, wird die gesamte Präsentation der aktuellen Website abgebrochen, verworfen und das Laden der neuen Seite beginnt. Durch dynamisches, asynchrones Nachladen von Daten wird die Serverlast reduziert und Wartezeiten können kürzer ausfallen. Ein Laden von Daten via HTTP über das Internet ist in den meisten Fällen langsamer, als das lokale Laden von Daten aus einem Cache. 
+Der Entwurf sieht eine SPA vor, die sich dynamisch an die Fenstergröße des Anwenders anpasst.
+Mit den Chrome Browser Entwicklertools soll sichergestellt werden, dass die Anwendung auch aktuellen Smartphones (iPhone X, Google Pixel 2) sauber dargestellt wird.
+Das Resultat der Suche nach einem Interpreten soll eine übersichtliche Liste mit den meist gehörten Titeln ergeben. Die Titel sollen sich nach von oben nach unten fortsetzen, womit ein Scroll-Leiste nötig sein wird. Die farbliche Gestaltung soll klar sein, die Schrift sich deutlich vom Hintergrund abheben. Eine dunkle Gestaltung der Website wird bevorzugt.
+React Native baut auf der Open-Source JavaScript Software-Bibliothek React auf. React stellt ein Grundgerüst an Komponenten zu Verfügung, die das Programmieren vereinfachen und vereinheitlichen. React Native ist eine React Software-Bibliothek die es ermöglicht native mobile Anwendungen und Webanwendungen mit der gleichen Codebasis zu erstellen. 
+Die React Native app soll die Charts der Länder Schweiz und Deutschland ein einer ähnlichen Übersicht zeigen. Der Wechsel zwischen den Charts der beiden Länder soll mit Elementen von React Navigation umgesetzt werden. Die Farbgebung soll sich genauso wie die SPA dunkel halten.
+Für die Dokumentation der Anwendungen wird die Auszeichnungssprache Markdown verwendet. In Online Versionsverwaltungsplattformen wie Github und Gitlab wird Markdown oft verwendet um eine Übersicht über das Repositorium zu geben. Für dieses Projekt wird der statische Dokumentationsgenerator MkDocs. MkDocs setzt vollständig auf Markdown und bietet Templates für die Navigaton durch die Dokumentation, ähnlich einem Inhaltsverzeichnis einer word- oder pdf-Datei.
 
+![Screenshot](img/RN-Charts.png)
+![Screenshot](img/RN-TopArtist.png)
 
-
+![Screenshot](img/SPA-desktop.png)
+![Screenshot](img/SPA-mobile.png)
